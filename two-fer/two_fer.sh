@@ -2,11 +2,8 @@
 
 
 main() {
-  if [[ $# -eq 0 ]]; then
-	  main "you"
-  else 
-	  echo "One for $1, one for me."
-  fi 
+  local name=$1
+  echo "One for ${name:-"you"}, one for me." 
   return 0 
 }
 
