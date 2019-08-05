@@ -7,7 +7,7 @@ COLORS="black brown red orange yellow green blue violet grey white"
 index_of() {
   local element=$1
   local collection="${@:2}"
-  let local count=0
+  local count=0
   for el in $collection;  do
     [[ $el = $element ]] && echo $count && break
     count=$(( $count + 1 ))
